@@ -1,4 +1,4 @@
-CFLAGS = -g -Wall -O3 -include includes.h
+CFLAGS = -g -Wall -Werror -O3 -include includes.h
 LDLIBS=
 CC=clang-3.8
 
