@@ -1,6 +1,6 @@
 CFLAGS = -g -Wall -Werror -O3 -include includes.h
 LDLIBS=
-CC=clang-3.8
+CC=c99 --std=c11
 
 SRCS := $(wildcard *.c)
 # This is a substitution reference. http://www.gnu.org/software/make/manual/make.html#Substitution-Refs
