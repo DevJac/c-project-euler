@@ -26,3 +26,9 @@ $(BINS) : bin/% : % | bin
 
 clean:
 				rm -r bin
+
+debug: CFLAGS = -g -Wall -Werror -O0 -include includes.h
+debug: all
+
+fast: CFLAGS = -g -Wall -Werror -Ofast -include includes.h
+fast: all
